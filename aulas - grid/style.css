@@ -1,13 +1,37 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo {
+  grid-column: 1 / -1;
+}
+/* Estilos Gerais */
+
 body {
   font-family: Arial;
+  margin: 40px;
+}
+
+h1,
+p {
+  margin: 0px;
 }
 
 h1 {
-  text-align: center;
+  font-size: 48px;
+  line-height: 1;
 }
 
-h2 {
-  margin-top: 0px;
+p,
+span {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .botao-comprar {
@@ -16,19 +40,11 @@ h2 {
   text-decoration: none;
   color: #103;
   border-radius: 8px;
+  font-size: 20px;
 }
 
-.item {
-  background: #f7f7f7;
-  border: 1px solid #e7e7e7;
-  padding: 20px;
+.preco {
+  background: #ddd;
+  padding: 5px 10px;
   border-radius: 8px;
-  display: grid;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 300px 300px;
-  gap: 20px;
-  justify-content: center;
 }
